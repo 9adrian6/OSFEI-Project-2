@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, papper, scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- First screen with 'Play game' button -->
+      <div class="first-screen">
+        <button type="button" class="first-button">Play Game</button>
+      </div>
+
+      <!-- Second screen with the game itself -->
+      <div class="second-screen hidden">
+        <!-- Score button -->
+        <div class="score button-custom">
+          Your current score is: <span class="score-number">0</span>
+        </div>
+        <p class="text">
+          Choose Your<br />
+          Variant
+        </p>
+        <!-- images with the logos ---- START -->
+        <div class="images">
+          <div class="paper">
+            <img
+              src="images/paper.png"
+              alt="paper logo"
+              width="150px"
+              height="150px"
+              style="border: 5px solid #45a1fc; border-radius: 100%"
+              onclick="userHand(paper)"
+            />
+          </div>
+          <div class="scissors">
+            <img
+              src="images/scissors.png"
+              alt="scissors logo"
+              width="150px"
+              height="150px"
+              style="border: 5px solid #fee549; border-radius: 100%"
+              onclick="userHand(scissors)"
+            />
+          </div>
+          <div class="rock">
+            <img
+              src="images/rock.png"
+              alt="rock logo"
+              width="150px"
+              height="150px"
+              style="border: 5px solid #f950bf; border-radius: 100%"
+              onclick="userHand(rock)"
+            />
+          </div>
+        </div>
+        <!-- END of logos -->
+
+        <!-- Small box with info about win/lose -->
+        <div class="result visibility">
+          <div class="see-result">
+            <div class="comp-divv">
+              <p>Comp</p>
+              <div id="comp-div"></div>
+            </div>
+            <div class="user-divv">
+              <p>User</p>
+              <div id="user-div"></div>
+            </div>
+          </div>
+          <button type="button" class="button-custom user-win-btn">
+            NO TEXT
+          </button>
+          <button
+            type="submit"
+            class="play-agn-btn button-custom"
+            style="font-size: 16px; width: 100px"
+          >
+            Play again
+          </button>
+        </div>
+
+        <!-- Button with rules about the game -->
+        <div class="rules">
+          <img
+            src="images/image004.png"
+            alt="game rules"
+            id="rules-image"
+            class="hidden"
+          />
+          <button class="rules-button button-custom" type="button">
+            Rules
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

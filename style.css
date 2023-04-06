@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #3e54a3;
+}
+
+.hidden {
+  display: none;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.button-custom {
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  padding: 10px 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.first-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: #fff;
+  padding: 25px 50px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.first-button:hover {
+  background-color: #fff;
+  color: #3e54a3;
+  transition: 0.3s ease-in-out;
+}
+
+.first-button:active {
+  background: transparent;
+  color: #fff;
+}
+
+.score {
+  position: absolute;
+  top: 5px;
+  right: 250px;
+  cursor: initial;
+}
+
+.text {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.paper {
+  position: absolute;
+  top: -150px;
+  left: -90px;
+}
+
+.scissors {
+  position: absolute;
+  top: 0;
+  left: -230px;
+}
+
+.rock {
+  position: absolute;
+  top: 0;
+  right: -200px;
+}
+
+.rules-button {
+  background: transparent;
+  position: absolute;
+  bottom: 5px;
+  right: 200px;
+}
+
+#rules-image {
+  position: absolute;
+  bottom: 45px;
+  right: 90px;
+}
+
+.result {
+  /* width: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  position: absolute;
+  bottom: 0;
+  left: 700px;
+}
+
+.see-result {
+  display: flex;
+  gap: 30px;
+}
+
+.result button {
+  background: transparent;
+}
+
+.user-win-btn {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px;
+}
